@@ -3,15 +3,17 @@ import TodoList from './components/TodoList/TodoList';
 import AppHeader from './components/AppHeader/AppHeader';
 import SearchPanel from './components/SearchPanel/SearchPanel';
 
+import styles from './index.module.scss';
+
 const App = () => {
   const todoData = [
-    { label: 'Drink Coffee', important: false },
-    { label: 'Learn React Build', important: false },
-    { label: 'Awesome App', important: true },
+    { label: 'Drink Coffee' },
+    { label: 'Have a lunch ' },
+    { label: ' Make Awesome App' },
   ];
 
   return (
-    <div>
+    <div className={styles.main}>
       <AppHeader />
       <SearchPanel />
       <TodoList todos={todoData} />

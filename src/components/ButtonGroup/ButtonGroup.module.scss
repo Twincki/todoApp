@@ -1,0 +1,14 @@
+.button {
+  width: 70px;
+  height: 32px;
+  color: #4d4d4d;
+  background-color: initial;
+  border-radius: 5px;
+  border: 1px solid #474747;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgb(52, 167, 255);
+    border-color: rgb(52, 167, 255);
+  }
+}
